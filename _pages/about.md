@@ -27,8 +27,28 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I’m **Min-June Kim**, an undergraduate student in **Computer Engineering at Hongik University**, Seoul, South Korea.  
+I am currently exploring **Computer Vision, 3D Image Processing, and Reinforcement Learning** — particularly how visual intelligence can enable **autonomous drones** to perceive and interact with their surroundings.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My recent research focuses on:
+- **Reinforcement Learning–based Autonomous Drone Flight**, using AirSim and Unreal Engine for simulation and Sim-to-Real transfer on an F450 drone equipped with Pixhawk4 and LiDAR.
+- **Dental X-ray Cavity Detection Pipeline**, combining YOLOv8 for object detection with MobileNet-based classifiers for multi-stage diagnosis.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I’m especially interested in bridging **virtual and real environments** through computational imaging and AI-driven 3D perception.  
+My long-term goal is to develop **vision-based autonomous systems** that connect robotics, computer vision, and immersive 3D interaction.
+
+---
+
+### Research Keywords
+- Computer Vision and 3D Imaging  
+- Reinforcement Learning for Autonomous Systems  
+- Computational Imaging and Displaying  
+- Drone-based Visual Intelligence  
+- Human–Computer Interaction via Vision
+
+---
+
+### Contact
+[rnrmf1121@gmail.com](mailto:rnrmf1121@gmail.com)  
+Hongik University, Seoul, Republic of Korea  
+

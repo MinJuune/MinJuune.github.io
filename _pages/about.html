@@ -1,0 +1,297 @@
+---
+layout: none
+permalink: /
+title: MinJune Kim
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MinJune Kim</title>
+    <meta name="author" content="MinJune Kim">
+    <meta
+      name="description"
+      content="Personal homepage of MinJune Kim."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        --text: #222222;
+        --muted: #666666;
+        --soft: #8a8a8a;
+        --line: #e9e9e9;
+        --link: #1772b8;
+        --page: #ffffff;
+        --subtle: #f7f7f7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--text);
+        font-family: "Inter", "Lato", Verdana, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.75;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      .page {
+        width: min(100%, 840px);
+        margin: 0 auto;
+        padding: 48px 20px 56px;
+      }
+
+      .profile {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 190px;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+
+      .intro {
+        min-width: 0;
+      }
+
+      h1 {
+        margin: 0 0 20px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .bio-placeholder {
+        margin: 0 0 18px;
+        color: var(--muted);
+      }
+
+      .links {
+        margin: 20px 0 0;
+        text-align: center;
+      }
+
+      .links a {
+        margin: 0 8px;
+        font-weight: 500;
+      }
+
+      .photo-link {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid var(--line);
+        background: var(--subtle);
+      }
+
+      .photo-link img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 35%;
+      }
+
+      section {
+        padding: 18px 0 8px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--line);
+        color: var(--text);
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .empty {
+        margin: 0;
+        color: var(--soft);
+        font-size: 14px;
+      }
+
+      .row-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: 150px minmax(0, 1fr);
+        gap: 20px;
+        align-items: start;
+      }
+
+      .date {
+        color: var(--soft);
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      .item-title {
+        font-weight: 600;
+      }
+
+      .item-body {
+        color: var(--muted);
+      }
+
+      footer {
+        margin-top: 28px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--soft);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      @media (max-width: 700px) {
+        .page {
+          padding: 28px 18px 42px;
+        }
+
+        .profile {
+          grid-template-columns: 1fr;
+          gap: 24px;
+          text-align: center;
+        }
+
+        .photo-link {
+          width: min(58vw, 190px);
+          margin: 0 auto;
+          order: -1;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .bio-placeholder {
+          max-width: 32ch;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        .item {
+          grid-template-columns: 1fr;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="profile">
+        <div class="intro">
+          <h1>MinJune Kim</h1>
+          <p class="bio-placeholder">
+            I am an M.S. student in Computer Software at Hanyang University,
+            advised by Prof. Jong-Il Park. I received my Bachelor's degree from
+            Hongik University.
+          </p>
+          <p class="bio-placeholder">
+            My research interests lie in 3D computer vision, with a particular
+            focus on 3D inpainting for reconstructing and completing visual
+            content in 3D scenes.
+          </p>
+          <p class="links">
+            <a href="mailto:rnrmf1121@gmail.com">Email</a>
+            /
+            <a href="{{ '/assets/pdf/CV_Kim_Min_June.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
+            /
+            <a href="https://github.com/minjuune" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+
+        <a class="photo-link" href="{{ '/assets/img/my_img.jpg' | relative_url }}">
+          <img
+            src="{{ '/assets/img/my_img.jpg' | relative_url }}"
+            alt="Profile photo of MinJune Kim"
+          >
+        </a>
+      </header>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="row-list">
+          <div class="item">
+            <div class="date">Mar. 2026 - Present</div>
+            <div>
+              <div class="item-title">Hanyang University</div>
+              <div class="item-body">M.S. in Computer Software</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="date">Mar. 2019 - Feb. 2026</div>
+            <div>
+              <div class="item-title">Hongik University</div>
+              <div class="item-body">B.S. in Computer Engineering</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <div class="row-list">
+          <div class="item">
+            <div class="date">YYYY</div>
+            <div>
+              <div class="item-title">Publication title</div>
+              <div class="item-body">Publication details will be added here.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="awards-heading">
+        <h2 id="awards-heading">Awards</h2>
+        <div class="row-list">
+          <div class="item">
+            <div class="date">2025</div>
+            <div>
+              <div class="item-title">Outstanding Graduation Project</div>
+              <div class="item-body">Honorable Mention, Hongik University</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Hosted on
+        <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+        Design inspired by
+        <a href="https://jonbarron.info/" target="_blank" rel="noopener">Jon Barron's academic homepage</a>.
+      </footer>
+    </main>
+  </body>
+</html>

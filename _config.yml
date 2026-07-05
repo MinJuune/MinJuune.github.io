@@ -8,8 +8,10 @@ lang: en
 include:
   - _pages
   - assets
+  - .nojekyll
 
 exclude:
+  - .github
   - Gemfile
   - Gemfile.lock
   - README.md
